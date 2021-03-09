@@ -1,0 +1,34 @@
+{
+  "name": "electron-react-config",
+  "version": "1.0.0",
+  "main": "electron/main.js",
+  "author": {
+    "name": "Caio Rafael",
+    "email": "caiorafaelrg@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "npm-run-all -p start:react start:electron",
+    "start:react": "webpack serve --config webpack/react.config.js --mode development",
+    "start:electron": "electron .",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "electron": "^12.0.0",
+    "electron-builder": "^22.10.5",
+    "electron-devtools-installer": "^3.1.1",
+    "html-webpack-plugin": "^5.3.0",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
