@@ -1,7 +1,7 @@
 {
   "name": "electron-react-config",
   "version": "1.0.0",
-  "main": "electron/main.js",
+  "main": "./electron/main.js",
   "author": {
     "name": "Caio Rafael",
     "email": "caiorafaelrg@gmail.com"
@@ -11,7 +11,7 @@
     "start": "npm-run-all -p start:react start:electron",
     "start:react": "webpack serve --config webpack/react.config.js --mode development",
     "start:electron": "electron .",
-    "build": "webpack --mode production"
+    "build": "webpack --config webpack/react.config.js --mode production"
   },
   "dependencies": {
     "react": "^17.0.1",
